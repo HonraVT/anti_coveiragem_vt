@@ -1,6 +1,6 @@
 # anti_coveiragem_vt
 
-## Como Instalar:
+## Como instalar:
 Só baixar, descompactar em algum canto, ir em [chrome://extensions](chrome://extensions), ativar o modo de desenvolvedor. clicar em carregar sem compactação e ir na pasta da extensão.
 
 ## Autor
