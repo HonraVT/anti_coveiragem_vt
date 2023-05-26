@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "VT Ignore",
+  "version": "3.0",
+  "description": "Extensão para que os tetas possam ignorar moderadores, new**** e palavras chave chatas. Está em versão BETA, ou seja, pode ter algum bug, nada muito sério, though. Espero que gostem",
+  "icons": {
+    "48": "icon-48.png"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.ignboards.com/forums/vale-tudo.80331/*"
+      ],
+      "js": [
+        "ignoreThread.js"
+      ]
+    }
+  ]
+}
