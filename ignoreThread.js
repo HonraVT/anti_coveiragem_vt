@@ -1,3 +1,7 @@
+chrome.storage.sync.get("data", () => {
+  muteCoveiragem();
+});
+
 function getThreads() {
   return document.querySelectorAll(".js-threadList>.structItem");
 }
@@ -15,7 +19,7 @@ function getThreadCreationDate(thread) {
   }
 }
 
-(() => {
+function muteCoveiragem() {
   const threads = getThreads();
   threads.forEach((thread) => {
     const createdAt = getThreadCreationDate(thread);
@@ -27,4 +31,4 @@ function getThreadCreationDate(thread) {
       thread.style = "display: none;";
     }
   });
-})();
+}
