@@ -1,9 +1,10 @@
 muteCoveiragem();
-hideImage();
+hideImages();
 
 function getThreads() {
   return document.querySelectorAll(".js-threadList>.structItem");
 }
+
 function getThreadCreationDate(thread) {
   try {
     const stringDate = thread.querySelector(".structItem-startDate").innerText;
@@ -30,7 +31,7 @@ function muteCoveiragem() {
 }
 
 
-function hideImage() {
+function hideImages() {
 const arr = [
   'https://assets-prd.ignimgs.com/',
   'https://oystatic.ignimgs.com/',
