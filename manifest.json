@@ -2,21 +2,21 @@
   "manifest_version": 3,
   "name": "VT Ignore",
   "version": "3.0",
-  "author": "lkiraTrue",
+  "author": "lkiraTrue/honra",
   "description": "Extensão anti coveiragem do VT.",
   "icons": {
     "48": "icon-48.png"
   },
     "permissions": [
-    "storage"
+    "activeTab"
   ],
   "content_scripts": [
     {
       "matches": [
-        "https://www.ignboards.com/forums/vale-tudo.80331/*"
+        "https://www.ignboards.com/*"
       ],
       "js": [
-        "ignoreThread.js"
+        "main.js"
       ]
     }
   ]
